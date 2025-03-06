@@ -3,10 +3,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const axios = require("axios");
 const cors = require("cors");
-
 const app = express();
 const port = 3000;
-
 app.use(cors());
 app.use(bodyParser.json());
 
@@ -36,14 +34,12 @@ app.post("/chat", async (req, res) => {
         4. Product & Warranty (materials, warranty details, customization).
         5. Assembly & Installation (free & professional installation).
         6. Customer Support (contact info, issue resolution).
-        
         **Rules:**
         - Always provide clear, professional responses.
         - If unsure, ask for more details or refer to customer support.
         - NEVER say "I don't sell products". Instead, guide users to relevant information.
         - Use friendly and engaging language.
         - Keep responses short but informative.
-        
         Now, respond to the user's query:
         "${message}"
         `
